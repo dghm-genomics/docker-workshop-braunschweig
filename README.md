@@ -6,6 +6,3 @@ Have a look at https://www.docker.com to learn about docker and how to use it.
 
 Please visit https://www.dsmz.de/home/news-and-events/events/genomics-workshop.html for information on the workshop.
 
-## Test
-
-# Test12
