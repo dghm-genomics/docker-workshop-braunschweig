@@ -15,7 +15,11 @@ RUN wget http://spades.bioinf.spbau.ru/release3.10.1/SPAdes-3.10.1-Linux.tar.gz
 RUN wget http://download.asperasoft.com/download/sw/ascp-client/3.5.4/ascp-install-3.5.4.102989-linux-64.sh
 RUN wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.8.2/sratoolkit.2.8.2-ubuntu64.tar.gz
 
-# Install
+# Install ascp
+RUN chmod u+x ascp-install-3.5.4.102989-linux-64.sh
+RUN ./ascp-install-3.5.4.102989-linux-64.sh
+
+# Install SPAdes
 WORKDIR /opt
 RUN tar -xzf /root/download/SPAdes-3.10.1-Linux.tar.gz
 RUN ln -s /opt/SPAdes-3.10.1-Linux/bin/* /usr/bin/
