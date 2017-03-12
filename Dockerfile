@@ -15,7 +15,7 @@ RUN wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.8.2/sratoolkit.2.8.2-ubunt
 # Install
 WORKDIR /opt
 RUN tar -xzf /root/download/SPAdes-3.10.1-Linux.tar.gz
-RUN ln -s /opt/SPAdes-3.9.1-Linux/bin/* /usr/bin/
+RUN ln -s /opt/SPAdes-3.10.1-Linux/bin/* /usr/bin/
 
 # Further TODOs
 #   Install other software
