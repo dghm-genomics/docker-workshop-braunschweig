@@ -5,6 +5,9 @@ FROM ubuntu:16.10
 RUN apt-get -y update && apt-get install -y \
   python3.5 \
   wget
+  
+# add softlink for python
+ln -s /usr/bin/python3.5 /usr/bin/python
 
 # Download software
 WORKDIR /root/download
