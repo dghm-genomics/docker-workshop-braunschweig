@@ -24,6 +24,10 @@ WORKDIR /opt
 RUN tar -xzf /root/download/SPAdes-3.10.1-Linux.tar.gz
 RUN ln -s /opt/SPAdes-3.10.1-Linux/bin/* /usr/bin/
 
+# Install sratoolkit
+RUN tar -xzf /root/download/sratoolkit.2.8.2-ubuntu64.tar.gz
+RUN ln -s /opt/sratoolkit.2.8.2-ubuntu64/bin/* /usr/bin/
+
 # Further TODOs
 #   Install other software
 #   Download raw sequence data?
