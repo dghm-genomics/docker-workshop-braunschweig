@@ -7,7 +7,7 @@ RUN apt-get -y update && apt-get install -y \
   wget
   
 # add softlink for python
-ln -s /usr/bin/python3.5 /usr/bin/python
+RUN ln -s /usr/bin/python3.5 /usr/bin/python
 
 # Download software
 WORKDIR /root/download
