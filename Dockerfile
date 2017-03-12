@@ -29,6 +29,7 @@ RUN tar -xzf /root/download/sratoolkit.2.8.2-ubuntu64.tar.gz
 RUN ln -s /opt/sratoolkit.2.8.2-ubuntu64/bin/* /usr/bin/
 
 # Download Mycoplasma genitalium reads from NCBI SRA
+WORKDIR /root/download/fastq
 RUN fastq-dump --split-files ERR486835
 RUN fastq-dump --split-files ERR486836
 
