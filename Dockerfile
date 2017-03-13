@@ -28,13 +28,11 @@ RUN ln -s /opt/SPAdes-3.10.1-Linux/bin/* /usr/bin/
 RUN tar -xzf /root/download/sratoolkit.2.8.2-ubuntu64.tar.gz
 RUN ln -s /opt/sratoolkit.2.8.2-ubuntu64/bin/* /usr/bin/
 
-# Download Mycoplasma genitalium reads from NCBI SRA
-WORKDIR /root/download/fastq
-RUN fastq-dump --split-files ERR486835
-RUN fastq-dump --split-files ERR486836
+# Download Mycoplasma genitalium sra files from NCBI SRA using the command prefetch
+RUN prefetch ERR486835
+RUN prefetch ERR486836
 
-# Further TODOs
-#   Install other software
-#   Download raw sequence data?
-#   Add users?
-#
+# Download Mycoplasma genitalium reads from NCBI SRA
+#WORKDIR /root/download/fastq
+#RUN fastq-dump --split-files ERR486835
+#RUN fastq-dump --split-files ERR486836
