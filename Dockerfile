@@ -1,9 +1,6 @@
 # Choose OS
 FROM ubuntu:16.10
 
-MAINTAINER Johannes Elias <joheli@gmx.net>
-VOLUME /data
-
 # Install packages
 RUN apt-get -y update && apt-get install -y \
   python3.5 \
