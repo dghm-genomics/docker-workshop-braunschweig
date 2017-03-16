@@ -1,6 +1,6 @@
 # Docker image for workshop in Braunschweig
 
-Please find here the dockerfile for an image used at a [workshop on genome assemby and annotation in Braunschweig](https://www.dsmz.de/home/news-and-events/events/genomics-workshop.html "website of the workshop hosted at DSMZ") in May 2017.
+Please find here the Dockerfile for an image used at a [workshop on genome assemby and annotation in Braunschweig](https://www.dsmz.de/home/news-and-events/events/genomics-workshop.html "website of the workshop hosted at DSMZ") in May 2017.
 
 ## Getting started
 
