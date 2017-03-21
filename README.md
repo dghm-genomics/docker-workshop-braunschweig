@@ -16,7 +16,7 @@ SPAdes is a genome assembler that has gained popularity for the assembly of prok
 
 ### NCBI's Sequence Read Archive
 
-The [Sequence Read Archive (SRA)](https://trace.ncbi.nlm.nih.gov/Traces/sra/) stores raw sequence data from "next-generation" sequencing technologies. Accession no. [ERR486835](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=ERR486835) and [ERR486836](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=ERR486836) represent two randomly chosen Illumina MiSeq paired end sequencing reads of //Mycoplasma genitalium//. The [SRA toolkit](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software) allows download and conversion of raw data into different formats.
+The [Sequence Read Archive (SRA)](https://trace.ncbi.nlm.nih.gov/Traces/sra/) stores raw sequence data from "next-generation" sequencing technologies. Accession no. [ERR486835](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=ERR486835) and [ERR486836](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=ERR486836) represent two randomly chosen Illumina MiSeq paired end sequencing reads of *Mycoplasma genitalium*. The [SRA toolkit](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software) allows download and conversion of raw data into different formats.
 
 ## More info
 
