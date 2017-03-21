@@ -16,7 +16,7 @@ Docker can be installed on many different platforms including [Windows](https://
 
 ### Pull the image
 
-The image described in the Dockerfile can be pulled (i.e. downloaded) by issing the command
+The image described in the Dockerfile can be pulled (i.e. downloaded) by issuing the command
 
     $ docker pull dghmgenomics/workshop-braunschweig
     
