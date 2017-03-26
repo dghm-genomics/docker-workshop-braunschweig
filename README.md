@@ -12,8 +12,16 @@ Please watch our introductory webcast by clicking on the image below. The webcas
 
 *  [Requirements](#requirements)
 *  [Questions](#questions)
+  * [What is a Dockerfile?](#what-is-a-dockefile)
+  * [What is Docker?](#what-is-docker)
+  * [Why is Docker used for this workshop?](#why-is-docker-used-for-this-workshop)
 *  [Getting started](#getting-started)
+  * [Install Docker](#install-docker)
+  * [Start Docker and download the image described by the presented Dockerfile](#start-docker-and-download-the-image-described-by-the-presented-dockerfile)
+  * [Interact with the image](#interact-with-the-image)
+  * [Optional: add a volume](#optional-add-a-volume)
 *  [Information about referenced software and data](#information-about-referenced-software-and-data)
+  * [SPAdes](#spades)
 
 ## Requirements
 
@@ -60,7 +68,7 @@ You can use Docker on 64-bit versions of Ubuntu 14.04 and above by installing th
 
 Please visit the [Docker homepage](http://www.docker.com) to learn about Docker for AWS, Docker for Azure, Docker for Windows Server, Docker for the CentOS distribution, Docker for Debian, Docker for Fedora®, Docker for Oracle Linux, Docker for RHEL, and Docker for SLES.
 
-### Start Docker and download ("pull") the image described by the presented Dockerfile
+### Start Docker and download the image described by the presented Dockerfile
 
 Once you have started Docker on your OS the image described can be pulled (i.e. downloaded) by issuing the command
 
