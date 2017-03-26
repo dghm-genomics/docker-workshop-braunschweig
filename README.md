@@ -32,30 +32,33 @@ Once you have started Docker on your OS the image described can be pulled (i.e. 
 
     $ docker pull dghmgenomics/workshop-braunschweig
 
+Plsease note, that on Linux the command has to be preceded by 'sudo' if you are not logged in with root privileges.
+
 To verify that the image has been downloaded, type the command
 
     $ docker images
 
 If the image has been downloaded, you will get a message similar to this:
 
-    REPOSITORY                           TAG                 IMAGE ID            CREATED             SIZE
-    dghmgenomics/workshop-braunschweig   latest              788ab87feb5d        11 days ago         547.8 MB
+    REPOSITORY                           TAG        IMAGE ID        CREATED        SIZE
+    dghmgenomics/workshop-braunschweig   latest     788ab87feb5d    11 days ago    547.8 MB
 
+Please note, that contents of fields "IMAGE ID" and "CREATED" will differ for your image.
 
-### Webcast
-
-Please watch our introductory webcast by clicking on the image below:
-
-[<img src="https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F623705475_450x300.jpg&amp;src1=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fshare%2Fplay_icon_overlay.png">](https://vimeo.com/208399207)
-
-
-
-    
 ### Interact with the image
 
 Type the following command to interact with the downloaded image:
 
     $ docker run -it dghmgenomics/workshop-braunschweig
+    
+If successful, you will be greeted with a command line prompt from within the started container, similar to the following:
+
+    root@e07c71035c6a:/data/fastq#
+    
+To exit from the container simply type "exit", as shown below, and press "Return":
+
+    root@e07c71035c6a:/data/fastq# exit
+    exit
     
 ### Add a volume
 
@@ -66,6 +69,17 @@ The command
     $ docker run -it -v /temp/export:/export dghmgenomics/workshop-braunschweig
 
 allows you to write data into the directory /export from within the container. Data will persist in the local directory /temp/export and remains available even after the container was stopped or killed.
+
+### Webcast
+
+Please watch our introductory webcast by clicking on the image below:
+
+[<img src="https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F623705475_450x300.jpg&amp;src1=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fshare%2Fplay_icon_overlay.png">](https://vimeo.com/208399207)
+
+
+
+    
+
 
 ## Information about referenced software and data
 
