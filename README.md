@@ -7,7 +7,7 @@ Please find here the Dockerfile for an image to be used at a [workshop on genome
 In order to get the Docker image up and running you need the following equipment and skills:
 
 *  Access to a computer with a 64-bit operating system with at least 8 GB of RAM. Please see the [installation section](#install-docker) to learn about the supported operating systems. You need to have administrator privileges in order to install Docker.
-*  Basic knowledge of the Linux shell. If you need a refresher, please visit [Learning the shell](http://linuxcommand.org/lc3_learning_the_shell.php). The most important commands you need are those for [navigation and file manipulation](http://linuxcommand.org/lc3_lts0050.php)
+*  Basic knowledge of the Linux shell. If you need a refresher, please visit [Learning the shell](http://linuxcommand.org/lc3_learning_the_shell.php). The most important commands you need are those for [navigation](http://linuxcommand.org/lc3_lts0030.php) and [file manipulation](http://linuxcommand.org/lc3_lts0050.php)
 
 ## Questions
 
@@ -101,11 +101,21 @@ Please note that Windows directories can only be accessed by prepending the disk
 
  ![Windows screenshot](https://github.com/dghm-genomics/docker-workshop-braunschweig/blob/master/images/pwd.png?raw=true)
 
+### Start SPAdes
 
+Once within the container, test SPAdes by typing
 
+    $ spades.py --test
 
-    
+If successful, a long log will be output to your screen finishing with
 
+    ========= TEST PASSED CORRECTLY.
+
+    SPAdes log can be found here: /data/fastq/spades_test/spades.log
+
+    Thank you for using SPAdes!
+
+Please watch the [webcast](#quick-start) for further tasks you can complete.
 
 ## Information about referenced software and data
 
