@@ -12,16 +12,16 @@ Please watch our introductory webcast by clicking on the image below. The webcas
 
 *  [Requirements](#requirements)
 *  [Questions](#questions)
-  * [What is a Dockerfile?](#what-is-a-dockefile)
-  * [What is Docker?](#what-is-docker)
-  * [Why is Docker used for this workshop?](#why-is-docker-used-for-this-workshop)
+    * [What is a Dockerfile?](#what-is-a-dockefile)
+    * [What is Docker?](#what-is-docker)
+    * [Why is Docker used for this workshop?](#why-is-docker-used-for-this-workshop)
 *  [Getting started](#getting-started)
-  * [Install Docker](#install-docker)
-  * [Start Docker and download the image described by the presented Dockerfile](#start-docker-and-download-the-image-described-by-the-presented-dockerfile)
-  * [Interact with the image](#interact-with-the-image)
-  * [Optional: add a volume](#optional-add-a-volume)
+    * [Install Docker](#install-docker)
+    * [Start Docker and download the image described by the presented Dockerfile](#start-docker-and-download-the-image-described-by-the-presented-dockerfile)
+    * [Interact with the image](#interact-with-the-image)
+    * [Optional: add a volume](#optional-add-a-volume)
 *  [Information about referenced software and data](#information-about-referenced-software-and-data)
-  * [SPAdes](#spades)
+    * [SPAdes](#spades)
 
 ## Requirements
 
