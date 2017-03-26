@@ -2,15 +2,25 @@
 
 Please find here the Dockerfile for an image to be used at a [workshop on genome assemby and annotation in Braunschweig](https://www.dsmz.de/home/news-and-events/events/genomics-workshop.html "website of the workshop hosted at DSMZ") in May 2017.
 
-## What is a Dockerfile?
+## Requirements
+
+In order to get the Docker image up and running you need the following equipment and skills:
+
+*  A computer with a 64-bit operating system with at least 8 GB of RAM. Please see the [installation section](#install-docker) to learn about the supported operating systems.
+
+
+
+## Questions
+
+### What is a Dockerfile?
 
 A Dockerfile is a text document that contains all the commands to assemble a Docker image. A Docker image is an emulation of a computer environment, ready with operating system, installed programs, files etc. 
 
-## What is Docker?
+### What is Docker?
 
 Docker is an open-source project that automates the deployment of applications inside software containers. A container is a runtime instance of a docker image.
 
-## Why is Docker used for this workshop?
+### Why is Docker used for this workshop?
 
 Docker is a quick way to get you started with a pre-specified software environment without losing time on manual installation of dependencies, downloading files etc. The goal of above workshop is to get you to experiment with programs presented at the workshop as quickly as possible.
 
