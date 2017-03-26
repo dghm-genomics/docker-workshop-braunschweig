@@ -2,9 +2,27 @@
 
 Please find here the Dockerfile for an image to be used at a [workshop on genome assemby and annotation in Braunschweig](https://www.dsmz.de/home/news-and-events/events/genomics-workshop.html "website of the workshop hosted at DSMZ") in May 2017.
 
+## What is a Dockerfile?
+
+A Dockerfile is a text document that contains all the commands to assemble a Docker image. A Docker image is an emulation of a computer environment, ready with operating system, installed programs, files etc. 
+
+## What is Docker?
+
+Docker is an open-source project that automates the deployment of applications inside software containers. A container is a runtime instance of a docker image.
+
+## Why is Docker used for this workshop?
+
+Docker is a quick way to get you started with a pre-specified software environment without losing time on manual installation of dependencies, downloading files etc. The goal of above workshop is to get you to experiment with programs presented at the workshop as quickly as possible.
+
+## Quick start 
+
+Please watch our introductory webcast by clicking on the image below. The webcast shows you how to download ("pull") the image specified by the presented Dockerfile and how to start working with it.
+
+[<img src="https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F623705475_450x300.jpg&amp;src1=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fshare%2Fplay_icon_overlay.png">](https://vimeo.com/208399207)
+
 ## Getting started
 
-In order to work with the presented Dockerfile you have to install Docker, which is an open-source project that automates the deployment of applications inside software containers.
+In order to work with the presented Dockerfile you have to install Docker.
 
 ### Install Docker
 
@@ -74,11 +92,6 @@ Please note that Windows directories can only be accessed by prepending the disk
 
  ![Windows screenshot](https://github.com/dghm-genomics/docker-workshop-braunschweig/blob/master/images/pwd.png?raw=true)
 
-### Webcast
-
-Please watch our introductory webcast by clicking on the image below:
-
-[<img src="https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F623705475_450x300.jpg&amp;src1=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fshare%2Fplay_icon_overlay.png">](https://vimeo.com/208399207)
 
 
 
