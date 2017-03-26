@@ -6,9 +6,8 @@ Please find here the Dockerfile for an image to be used at a [workshop on genome
 
 In order to get the Docker image up and running you need the following equipment and skills:
 
-*  A computer with a 64-bit operating system with at least 8 GB of RAM. Please see the [installation section](#install-docker) to learn about the supported operating systems.
-
-
+*  Access to a computer with a 64-bit operating system with at least 8 GB of RAM. Please see the [installation section](#install-docker) to learn about the supported operating systems. You need to have administrator privileges in order to install Docker.
+*  Basic knowledge of the Linux shell. If you need a refresher, please visit [Learning the shell](http://linuxcommand.org/lc3_learning_the_shell.php). The most important commands you need are those for [navigation and file manipulation](http://linuxcommand.org/lc3_lts0050.php)
 
 ## Questions
 
