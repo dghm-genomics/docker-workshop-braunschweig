@@ -131,7 +131,7 @@ If successful, a long log will be output to your screen finishing with
 
     Thank you for using SPAdes!
 
-Please watch the [webcast](#quick-start) for further tasks you can complete.
+Please watch the [webcast](#quick-start) for further tasks you can complete. These include downloading data from the NCBI Sequence Read Archive, extracting data in the fastq format and assembling reads with SPAdes.
 
 ## Information about referenced software and data
 
