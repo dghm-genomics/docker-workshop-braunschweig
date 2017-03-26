@@ -72,7 +72,7 @@ allows you to write data into the directory /export from within the container. D
 
 Please note that on Windows directories from your host system have to be accessed by prepending the disk letter. It's always a good idea to type "pwd" (=present working directory) from Docker to see which directory Docker is accessing by default. On my Windows computer, the command "pwd" yields the following result:
 
- ![Windows screenshot](https://github.com/dghm-genomics/docker-workshop-braunschweig/blob/master/images/pwd.png)
+ ![Windows screenshot](https://github.com/dghm-genomics/docker-workshop-braunschweig/blob/master/images/pwd.png =300x)
 
 ### Webcast
 
