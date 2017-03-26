@@ -60,15 +60,17 @@ To exit from the container simply type "exit", as shown below, and press "Return
     root@e07c71035c6a:/data/fastq# exit
     exit
     
-### Add a volume
+### Optional: add a volume
 
 By specifying a local directory with the -v option you can add a local directory, which can be accessed from within the Docker container.
 
-The command
+E.g. the command
 
     $ docker run -it -v /temp/export:/export dghmgenomics/workshop-braunschweig
 
 allows you to write data into the directory /export from within the container. Data will persist in the local directory /temp/export and remains available even after the container was stopped or killed.
+
+Please note that, depending on your host OS (which can be Windows, Mac, or Linux) other host 
 
 ### Webcast
 
