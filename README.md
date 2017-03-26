@@ -70,9 +70,9 @@ E.g. the command
 
 allows you to write data into the directory /export from within the container. Data will persist in the local directory /temp/export and remains available even after the container was stopped or killed.
 
-Please note that on Windows directories from your host system have to be accessed by prepending the disk letter. It's always a good idea to type "pwd" (=present working directory) from Docker to see which directory Docker is accessing by default. On my Windows computer, the command "pwd" yields the following result:
+Please note that Windows directories can only be accessed by prepending the disk letter; e.g. to specify "C:\temp" you would have to write "/c/temp". It's always a good idea to type "pwd" (=present working directory) from Docker to see which directory Docker is accessing by default. On my Windows computer, the command "pwd" yields the following result:
 
- ![Windows screenshot](https://github.com/dghm-genomics/docker-workshop-braunschweig/blob/master/images/pwd.png =300x)
+ ![Windows screenshot](https://github.com/dghm-genomics/docker-workshop-braunschweig/blob/master/images/pwd.png?raw=true)
 
 ### Webcast
 
