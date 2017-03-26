@@ -4,15 +4,35 @@ Please find here the Dockerfile for an image to be used at a [workshop on genome
 
 ## Getting started
 
+In order to work with the presented Dockerfile you have to install Docker, which is an open-source project that automates the deployment of applications inside software containers.
+
+### Install Docker
+
+Docker can be installed for free on many different operating systems including Windows, Mac, and many Linux distributions.
+
+#### Install Docker for Windows
+
+If you have Windows 10 Professional or Enterprise 64-bit, you should install the [Docker Community Edition for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows). For other Windows versions, use [Docker Toolbox](https://www.docker.com/products/docker-toolbox). Please refer to Docker's [Windows instructions](https://www.docker.com/docker-windows) for more information.
+
+#### Install Docker for Mac
+
+If you have Apple Mac OS Yosemite 10.10.3 or above, you should install the [Docker Community Edition for Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac). For other versions, use [Docker Toolbox](https://www.docker.com/products/docker-toolbox). Please refer to Docker's [Mac instructions](https://www.docker.com/docker-mac) for more information.
+
+#### Install Docker for Ubuntu
+
+You can use Docker on 64-bit versions of Ubuntu 14.04 and above by installing the [Docker Community Edition for Ubuntu](https://store.docker.com/editions/community/docker-ce-server-ubuntu). Please refer to Docker's [Ubuntu instructions](https://www.docker.com/docker-ubuntu) for more information.
+
+#### Install Docker for other operating systems or environments
+
+Please visit the [Docker homepage](http://www.docker.com) to learn about Docker for AWS, Docker for Azure, Docker for Windows Server, Docker for the CentOS distribution, Docker for Debian, Docker for Fedora®, Docker for Oracle Linux, Docker for RHEL, and Docker for SLES.
+
 ### Webcast
 
 Please watch our introductory webcast by clicking on the image below:
 
 [<img src="https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F623705475_450x300.jpg&amp;src1=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fshare%2Fplay_icon_overlay.png">](https://vimeo.com/208399207)
 
-### Install Docker
 
-Docker can be installed on many different platforms including [Windows](https://www.docker.com/docker-windows), [Mac](https://www.docker.com/docker-mac), [Ubuntu](https://www.docker.com/docker-ubuntu), or other Linux distros. Click the appropriate link to learn how to proceed for your platform.
 
 ### Pull the image
 
