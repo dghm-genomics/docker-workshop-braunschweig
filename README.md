@@ -22,6 +22,7 @@ Please watch our introductory webcast by clicking on the image below. The webcas
     * [Optional: add a volume](#optional-add-a-volume)
 *  [Information about referenced software and data](#information-about-referenced-software-and-data)
     * [SPAdes](#spades)
+    * [NCBI's Sequence Read Archive](#ncbis-sequence-read-archive)
 
 ## Requirements
 
@@ -141,8 +142,3 @@ SPAdes is a genome assembler that has gained popularity for the assembly of prok
 ### NCBI's Sequence Read Archive
 
 The [Sequence Read Archive (SRA)](https://trace.ncbi.nlm.nih.gov/Traces/sra/) stores raw sequence data from "next-generation" sequencing technologies. Accession no. [ERR486835](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=ERR486835) and [ERR486836](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=ERR486836) represent two randomly chosen Illumina MiSeq paired end sequencing reads of *Mycoplasma genitalium*. The [SRA toolkit](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software) allows download and conversion of raw data into different formats.
-
-## More info
-
-Visit [the Docker website](https://www.docker.com) to learn about Dockerfiles and how to use them.
-
