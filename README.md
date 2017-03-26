@@ -71,11 +71,13 @@ Please visit the [Docker homepage](http://www.docker.com) to learn about Docker 
 
 ### Start Docker and download the image described by the presented Dockerfile
 
-Once you have started Docker on your OS the image described can be pulled (i.e. downloaded) by issuing the command
+Once you have successfully installed Docker you can immediatly start working with it. On Windows, you will have to doubleclick on the appropriate icon (Docker Community Edition or Docker Toolbox) to fire up Docker. 
+
+The image described can be pulled (i.e. downloaded) by issuing the command
 
     $ docker pull dghmgenomics/workshop-braunschweig
 
-Plsease note, that on Linux the command has to be preceded by 'sudo' if you are not logged in with root privileges.
+Please note, that on Linux the command has to be preceded by 'sudo' if you are not logged in with root privileges.
 
 To verify that the image has been downloaded, type the command
 
