@@ -26,6 +26,22 @@ You can use Docker on 64-bit versions of Ubuntu 14.04 and above by installing th
 
 Please visit the [Docker homepage](http://www.docker.com) to learn about Docker for AWS, Docker for Azure, Docker for Windows Server, Docker for the CentOS distribution, Docker for Debian, Docker for Fedora®, Docker for Oracle Linux, Docker for RHEL, and Docker for SLES.
 
+### Start Docker and download ("pull") the image described by the presented Dockerfile
+
+Once you have started Docker on your OS the image described can be pulled (i.e. downloaded) by issuing the command
+
+    $ docker pull dghmgenomics/workshop-braunschweig
+
+To verify that the image has been downloaded, type the command
+
+    $ docker images
+
+If the image has been downloaded, you will get a message similar to this:
+
+    REPOSITORY                           TAG                 IMAGE ID            CREATED             SIZE
+    dghmgenomics/workshop-braunschweig   latest              788ab87feb5d        11 days ago         547.8 MB
+
+
 ### Webcast
 
 Please watch our introductory webcast by clicking on the image below:
@@ -34,11 +50,6 @@ Please watch our introductory webcast by clicking on the image below:
 
 
 
-### Pull the image
-
-The image described in the Dockerfile can be pulled (i.e. downloaded) by issuing the command
-
-    $ docker pull dghmgenomics/workshop-braunschweig
     
 ### Interact with the image
 
