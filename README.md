@@ -12,7 +12,7 @@ Please watch our introductory webcast by clicking on the image below. The webcas
 
 *  [Requirements](#requirements)
 *  [Questions](#questions)
-    * [What is a Dockerfile?](#what-is-a-dockefile)
+    * [What is a Dockerfile?](#what-is-a-dockerfile)
     * [What is Docker?](#what-is-docker)
     * [Why is Docker used for this workshop?](#why-is-docker-used-for-this-workshop)
 *  [Getting started](#getting-started)
