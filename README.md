@@ -28,8 +28,8 @@ Please watch our introductory webcast by clicking on the image below. The webcas
 
 In order to get the Docker image up and running you need the following equipment and skills:
 
-*  Access to a computer with a 64-bit operating system with at least 8 GB of RAM. Please see the [installation section](#install-docker) to learn about the supported operating systems. You need to have administrator privileges in order to install Docker.
-*  Basic knowledge of the Linux shell. If you need a refresher, please visit [Learning the shell](http://linuxcommand.org/lc3_learning_the_shell.php). The most important commands you need are those for [navigation](http://linuxcommand.org/lc3_lts0030.php) and [file manipulation](http://linuxcommand.org/lc3_lts0050.php)
+*  Access to a computer with a 64-bit operating system with at least 8 GB of RAM. Please see the [installation section](#install-docker) to see which operating systems are currently supported. You also need administrator privileges in order to install Docker.
+*  Basic knowledge of the Linux shell. If you need a refresher, please visit the page [Learning the shell](http://linuxcommand.org/lc3_learning_the_shell.php). The most important commands you need here are those for [navigation](http://linuxcommand.org/lc3_lts0030.php) and [file manipulation](http://linuxcommand.org/lc3_lts0050.php)
 
 ## Questions
 
@@ -47,7 +47,7 @@ Docker is a quick way to get you started with a pre-specified software environme
 
 ## Getting started
 
-In order to work with the presented Dockerfile you have to install Docker.
+The following subsections will point you to instructions for installation of Docker on your operating system. After installation, you will learn how to work with an instance of the image.
 
 ### Install Docker
 
