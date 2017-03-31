@@ -29,6 +29,7 @@ Please watch our introductory webcast by clicking on the image below. The webcas
 In order to get the Docker image up and running you need the following equipment and skills:
 
 *  Access to a computer with a 64-bit operating system with at least 8 GB of RAM. Please see the [installation section](#install-docker) to see which operating systems are currently supported. You also need administrator privileges in order to install Docker.
+*  At least 1 GB of free disk space after Docker is installed. The present Docker image currently
 *  Basic knowledge of the Linux shell. If you need a refresher, please visit the page [Learning the shell](http://linuxcommand.org/lc3_learning_the_shell.php). The most important commands you need here are those for [navigation](http://linuxcommand.org/lc3_lts0030.php) and [file manipulation](http://linuxcommand.org/lc3_lts0050.php)
 
 ## Questions
