@@ -4,6 +4,7 @@ FROM ubuntu:16.10
 # Install packages
 RUN apt-get -y update && apt-get install -y \
   bwa \
+  default-jre \
   python3 \
   samtools \
   varscan \
