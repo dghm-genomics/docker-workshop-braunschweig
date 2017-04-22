@@ -3,8 +3,11 @@ FROM ubuntu:16.10
 
 # Install packages
 RUN apt-get -y update && apt-get install -y \
+  bwa \
   python3.5 \
-  wget
+  samtools \
+  varscan \
+  wget 
   
 # add softlink for python (required for SPAdes)
 RUN ln -s /usr/bin/python3.5 /usr/bin/python
