@@ -8,7 +8,7 @@ RUN apt-get -y update && apt-get install -y \
   samtools \
   varscan \
   wget 
-  
+
 # add softlink for python (required for SPAdes)
 RUN ln -s /usr/bin/python3.5 /usr/bin/python
 
