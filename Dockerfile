@@ -33,6 +33,10 @@ RUN ln -s /opt/SPAdes-3.10.1-Linux/bin/* /usr/bin/
 RUN tar -xzf /root/download/sratoolkit.2.8.2-ubuntu64.tar.gz
 RUN ln -s /opt/sratoolkit.2.8.2-ubuntu64/bin/* /usr/bin/
 
+# Install Binfo seminar toolbox
+RUN tar -xzf /root/download/1.0.tar.gz
+RUN ln -s /opt/Binfo_seminar_toolbox-1.0/* /usr/bin/
+
 # Download two Mycoplasma genitalium sra files from NCBI SRA using the sratoolkit command 'prefetch' 
 # By default, sra files are stored in directory /root/ncbi/public/sra/
 RUN prefetch ERR486835
