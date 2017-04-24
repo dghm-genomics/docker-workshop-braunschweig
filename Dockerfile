@@ -18,7 +18,7 @@ WORKDIR /root/download
 RUN wget http://spades.bioinf.spbau.ru/release3.10.1/SPAdes-3.10.1-Linux.tar.gz
 RUN wget http://download.asperasoft.com/download/sw/ascp-client/3.5.4/ascp-install-3.5.4.102989-linux-64.sh
 RUN wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.8.2/sratoolkit.2.8.2-ubuntu64.tar.gz
-RUN wget https://github.com/dghm-genomics/Binfo_seminar_toolbox/archive/1.0.tar.gz
+RUN wget https://github.com/dghm-genomics/Binfo_seminar_toolbox/archive/1.1.tar.gz
 
 # Install ascp (this is optional for sratoolkit below)
 RUN chmod u+x ascp-install-3.5.4.102989-linux-64.sh
@@ -34,8 +34,9 @@ RUN tar -xzf /root/download/sratoolkit.2.8.2-ubuntu64.tar.gz
 RUN ln -s /opt/sratoolkit.2.8.2-ubuntu64/bin/* /usr/bin/
 
 # Install Binfo seminar toolbox
-RUN tar -xzf /root/download/1.0.tar.gz
-RUN ln -s /opt/Binfo_seminar_toolbox-1.0/* /usr/bin/
+RUN tar -xzf /root/download/1.1.tar.gz
+RUN chmod 744 /opt/Binfo_seminar_toolbox-1.1/*.sh
+RUN ln -s /opt/Binfo_seminar_toolbox-1.1/* /usr/bin/
 
 # Download two Mycoplasma genitalium sra files from NCBI SRA using the sratoolkit command 'prefetch' 
 # By default, sra files are stored in directory /root/ncbi/public/sra/
