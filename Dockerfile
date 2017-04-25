@@ -5,9 +5,11 @@ FROM ubuntu:16.10
 RUN apt-get -y update && apt-get install -y \
   bwa \
   default-jre \
+  nano \
   python3 \
   samtools \
   varscan \
+  vim \
   wget 
 
 # add softlink for python (required for SPAdes)
