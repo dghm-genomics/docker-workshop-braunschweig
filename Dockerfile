@@ -3,17 +3,19 @@ FROM ubuntu:16.10
 
 # Install packages
 RUN apt-get -y update && apt-get install -y \
+  bc \
   bwa \
   default-jre \
+  dos2unix \
   nano \
+  mc \
+  most \
+  less \
   python3 \
   samtools \
   varscan \
   vim \
   wget 
-
-# add softlink for python (required for SPAdes)
-# RUN ln -s /usr/bin/python3.5 /usr/bin/python
 
 # Download required software
 WORKDIR /root/download
