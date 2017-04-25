@@ -39,8 +39,11 @@ RUN ln -s /opt/sratoolkit.2.8.2-ubuntu64/bin/* /usr/bin/
 
 # Install Binfo seminar toolbox
 RUN tar -xzf /root/download/1.1.tar.gz
-RUN chmod 744 /opt/Binfo_seminar_toolbox-1.1/*.sh
+RUN chmod 777 /opt/Binfo_seminar_toolbox-1.1/*.sh
 RUN ln -s /opt/Binfo_seminar_toolbox-1.1/* /usr/bin/
+
+# Change user
+USER workshop-user
 
 # Download two Mycoplasma genitalium sra files from NCBI SRA using the sratoolkit command 'prefetch' 
 # By default, sra files are stored in directory /root/ncbi/public/sra/
