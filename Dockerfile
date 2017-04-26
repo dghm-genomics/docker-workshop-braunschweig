@@ -48,11 +48,10 @@ RUN ln -s /opt/Binfo_seminar_toolbox-1.1/* /usr/bin/
 
 # Change user
 USER workshop-user
+WORKDIR /home/workshop-user
+RUN mkdir save
 
 # Download two Mycoplasma genitalium sra files from NCBI SRA using the sratoolkit command 'prefetch' 
 # By default, sra files are stored in directory /home/workshop-user/ncbi/public/sra/
 RUN prefetch ERR486835
 RUN prefetch ERR486836
-
-# Change to directory /home/workshop-user
-WORKDIR /home/workshop-user
