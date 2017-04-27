@@ -71,7 +71,7 @@ RUN chmod 755 /opt/Binfo_seminar_toolbox-1.1/*.sh
 RUN ln -s /opt/Binfo_seminar_toolbox-1.1/* /usr/bin/
 
 # Change user
-USER workshop-user
+#USER workshop-user
 WORKDIR /home/workshop-user
 
 # Download two Mycoplasma genitalium sra files from NCBI SRA using the sratoolkit command 'prefetch' 
