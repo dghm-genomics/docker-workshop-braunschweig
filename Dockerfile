@@ -44,8 +44,13 @@ RUN wget https://github.com/hyattpd/Prodigal/archive/v2.6.3.zip
 RUN wget http://mbio-serv2.mbioekol.lu.se/ARAGORN/Downloads/aragorn1.2.38.tgz
 RUN wget http://eddylab.org/software/hmmer3/3.1b2/hmmer-3.1b2-linux-intel-x86_64.tar.gz
 RUN wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.6.0+-x64-linux.tar.gz
+RUN wget https://github.com/marbl/parsnp/releases/download/v1.2/parsnp-Linux64-v1.2.tar.gz
 
 RUN chown -R workshop-user:workshop-user /home/workshop-user/*
+
+# Bio Perl
+RUN curl -L http://cpanmin.us | perl - App::cpanminus
+RUN cpanm Bio::Perl
 
 # Install ascp (this is optional for sratoolkit below)
 RUN chmod 755 ascp-install-3.5.4.102989-linux-64.sh
