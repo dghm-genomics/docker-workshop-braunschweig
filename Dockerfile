@@ -30,7 +30,7 @@ WORKDIR /home/workshop-user/download
 RUN wget http://spades.bioinf.spbau.ru/release3.10.1/SPAdes-3.10.1-Linux.tar.gz
 RUN wget http://download.asperasoft.com/download/sw/ascp-client/3.5.4/ascp-install-3.5.4.102989-linux-64.sh
 RUN wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.8.2/sratoolkit.2.8.2-ubuntu64.tar.gz
-RUN wget https://github.com/dghm-genomics/Binfo_seminar_toolbox/archive/1.1.tar.gz
+RUN wget https://github.com/dghm-genomics/Binfo_seminar_toolbox/archive/1.2.tar.gz
 RUN wget https://sourceforge.net/projects/samtools/files/samtools/0.1.19/samtools-0.1.19.tar.bz2/download
 RUN mv download samtools.tar.bz2
 RUN wget https://sourceforge.net/projects/bbmap/files/latest/download
@@ -66,9 +66,9 @@ RUN tar -xzf /home/workshop-user/download/sratoolkit.2.8.2-ubuntu64.tar.gz
 RUN ln -s /opt/sratoolkit.2.8.2-ubuntu64/bin/* /usr/bin/
 
 # Install Binfo seminar toolbox
-RUN tar -xzf /home/workshop-user/download/1.1.tar.gz
-RUN chmod 755 /opt/Binfo_seminar_toolbox-1.1/*.sh
-RUN ln -s /opt/Binfo_seminar_toolbox-1.1/* /usr/bin/
+RUN tar -xzf /home/workshop-user/download/1.2.tar.gz
+RUN chmod 755 /opt/Binfo_seminar_toolbox-1.2/*.sh
+RUN ln -s /opt/Binfo_seminar_toolbox-1.2/* /usr/bin/
 
 # Change user
 #USER workshop-user
