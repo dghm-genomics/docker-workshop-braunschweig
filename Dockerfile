@@ -5,12 +5,16 @@ FROM ubuntu:16.10
 RUN apt-get -y update && apt-get install -y \
   bc \
   bwa \
+  build-essential \
+  checkinstall \
   default-jre \
   dos2unix \
+  gawk \
   nano \
   mc \
   most \
   less \
+  perl \
   python3 \
   samtools \
   varscan \
@@ -26,6 +30,10 @@ RUN wget http://spades.bioinf.spbau.ru/release3.10.1/SPAdes-3.10.1-Linux.tar.gz
 RUN wget http://download.asperasoft.com/download/sw/ascp-client/3.5.4/ascp-install-3.5.4.102989-linux-64.sh
 RUN wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.8.2/sratoolkit.2.8.2-ubuntu64.tar.gz
 RUN wget https://github.com/dghm-genomics/Binfo_seminar_toolbox/archive/1.1.tar.gz
+RUN wget https://sourceforge.net/projects/samtools/files/samtools/0.1.19/samtools-0.1.19.tar.bz2/download
+RUN mv download samtools.tar.bz2
+RUN wget https://sourceforge.net/projects/bbmap/files/latest/download
+RUN mv download bbmap.tar.gz
 RUN chown -R workshop-user:workshop-user /home/workshop-user/*
 
 # Install ascp (this is optional for sratoolkit below)
@@ -49,7 +57,6 @@ RUN ln -s /opt/Binfo_seminar_toolbox-1.1/* /usr/bin/
 # Change user
 USER workshop-user
 WORKDIR /home/workshop-user
-RUN mkdir save
 
 # Download two Mycoplasma genitalium sra files from NCBI SRA using the sratoolkit command 'prefetch' 
 # By default, sra files are stored in directory /home/workshop-user/ncbi/public/sra/
