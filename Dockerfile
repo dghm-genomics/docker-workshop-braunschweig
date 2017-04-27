@@ -14,6 +14,7 @@ RUN apt-get -y update && apt-get install -y \
   mc \
   most \
   less \
+  parallel \
   perl \
   python3 \
   samtools \
@@ -34,6 +35,16 @@ RUN wget https://sourceforge.net/projects/samtools/files/samtools/0.1.19/samtool
 RUN mv download samtools.tar.bz2
 RUN wget https://sourceforge.net/projects/bbmap/files/latest/download
 RUN mv download bbmap.tar.gz
+RUN wget http://www.vicbioinformatics.com/barrnap-0.6.tar.gz
+RUN wget http://www.vicbioinformatics.com/prokka-1.12.tar.gz
+RUN wget http://eddylab.org/infernal/infernal-1.1.2-linux-intel-gcc.tar.gz
+RUN wget ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn/linux.tbl2asn.gz
+RUN wget https://github.com/hyattpd/Prodigal/releases/download/v2.6.3/prodigal.linux
+RUN wget https://github.com/hyattpd/Prodigal/archive/v2.6.3.zip
+RUN wget http://mbio-serv2.mbioekol.lu.se/ARAGORN/Downloads/aragorn1.2.38.tgz
+RUN wget http://eddylab.org/software/hmmer3/3.1b2/hmmer-3.1b2-linux-intel-x86_64.tar.gz
+RUN wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.6.0+-x64-linux.tar.gz
+
 RUN chown -R workshop-user:workshop-user /home/workshop-user/*
 
 # Install ascp (this is optional for sratoolkit below)
