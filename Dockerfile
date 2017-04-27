@@ -50,7 +50,7 @@ RUN chown -R workshop-user:workshop-user /home/workshop-user/*
 
 # Bio Perl
 RUN curl -L http://cpanmin.us | perl - App::cpanminus
-RUN cpanm Bio::Perl
+#RUN cpanm Bio::Perl
 
 # Install ascp (this is optional for sratoolkit below)
 RUN chmod 755 ascp-install-3.5.4.102989-linux-64.sh
