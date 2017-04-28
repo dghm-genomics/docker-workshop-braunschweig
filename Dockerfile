@@ -11,16 +11,18 @@ RUN apt-get -y update && apt-get install -y \
   default-jre \
   dos2unix \
   gawk \
-  nano \
+  libncurses5-dev \
   mc \
   most \
+  nano \
   less \
   parallel \
   perl \
   python3 \
   varscan \
   vim \
-  wget 
+  wget \
+  zlib1g-dev
 
 # Add user
 RUN useradd -ms /bin/bash workshop-user
@@ -69,6 +71,16 @@ RUN ln -s /opt/sratoolkit.2.8.2-ubuntu64/bin/* /usr/bin/
 RUN tar -xzf /home/workshop-user/download/1.2.tar.gz
 RUN chmod 755 /opt/Binfo_seminar_toolbox-1.2/*.sh
 RUN ln -s /opt/Binfo_seminar_toolbox-1.2/* /usr/bin/
+
+# Install Blast
+RUN tar -xzf /home/workshop-user/download/ncbi-blast-2.6.0+-x64-linux.tar.gz
+RUN ln -s /opt/ncbi-blast-2.6.0+/bin/* /usr/bin/
+
+# samtools 
+RUN tar -xjf /home/workshop-user/download/samtools.tar.bz2
+WORKDIR /opt/samtools-0.1.19
+RUN make
+RUN ln -s /opt/samtools-0.1.19/samtools /usr/bin
 
 # Change user
 #USER workshop-user
