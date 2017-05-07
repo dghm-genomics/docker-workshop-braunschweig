@@ -1,0 +1,43 @@
+#!/bin/bash
+
+RED="\033[1;31m"
+GREEN="\033[0;32m"
+YELLOW="\033[1;33m"
+CYAN="\033[1;36m"
+BROWN="\033[1;34m"
+BLUE="\033[0;33m"
+STD="\033[0m"
+
+goodbye () {
+	clear
+	echo -e "\n\n${CYAN}Thank you for using the help menu - please type ${YELLOW}$0${CYAN} if you need it again!\n"
+	return 0
+}
+
+unrecognized () {
+	echo -e " ${RED}Oops - please choose from the above!${STD}" && sleep 1
+	return 0
+}
+
+while true; do
+	clear
+	echo -e "${BROWN}---------------------------------------"
+	echo "            H E L P  -  M E N U"
+	echo -e "---------------------------------------${STD}"
+	echo ""
+	echo "  (1) Linux basics"
+	echo "  (2) Installed programs"
+	echo "  (q) quit"
+	echo ""
+	read -n1 -p "$(echo -e ${BLUE}Your choice: ${STD})" choice
+	case $choice in
+		1) pandoc md/linux.md | lynx --stdin ;;
+		2) pandoc md/software.md | lynx --stdin ;;
+		q) break ;;
+		*) unrecognized
+	esac
+done
+
+goodbye
+
+
