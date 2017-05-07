@@ -2,7 +2,7 @@
 FROM ubuntu:16.10
 
 ## label
-LABEL version="0.5" \
+LABEL version="0.6" \
    maintainer="Johannes Elias" \
    maintainer_email="joheli@gmx.net" \
    description="Image used at DGHM workshop for genome assembly and annotation in Braunschweig in May 2017" \
@@ -49,6 +49,11 @@ RUN useradd -ms /bin/bash workshop-user && echo "workshop-user:BraunschweigDGHM"
 ## create directories
 WORKDIR /opt
 WORKDIR /home/workshop-user/download
+
+## Help menu
+
+RUN wget https://github.com/dghm-genomics/docker-workshop-braunschweig/archive/v0.6.tar.gz; \
+   tar -xzf v0.6.tar.gz
 
 ## download and install further software
 
