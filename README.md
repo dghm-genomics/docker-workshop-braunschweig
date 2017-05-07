@@ -1,6 +1,6 @@
 # Dockerfile for workshop in Braunschweig
 
-Please find here the Dockerfile for an image to be used at a [workshop on genome assemby and annotation in Braunschweig](https://www.dsmz.de/home/news-and-events/events/genomics-workshop.html "website of the workshop hosted at DSMZ") in May 2017. The image generated from the Dockerfile is hosted at Docker hub (https://hub.docker.com/r/dghmgenomics/workshop-braunschweig/).
+Please find here the Dockerfile for an image to be used at a [workshop on genome assemby and annotation in Braunschweig](https://www.dsmz.de/home/news-and-events/events/genomics-workshop.html "website of the workshop hosted at DSMZ") in May 2017. The image generated from the Dockerfile is hosted at [Docker Hub](https://hub.docker.com/r/dghmgenomics/workshop-braunschweig/).
 
 ## Quick start 
 
