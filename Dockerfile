@@ -25,11 +25,13 @@ RUN apt-get -y update && apt-get install -y \
   libdigest-md5-perl \
   libncurses5-dev \
   libxml-simple-perl \
+  lynx \
   man-db \
   mc \
   most \
   nano \
   less \
+  pandoc \
   parallel \
   perl \
   python3 \
