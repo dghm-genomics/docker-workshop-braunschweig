@@ -2,7 +2,7 @@
 FROM ubuntu:16.10
 
 ## label
-LABEL version="0.6" \
+LABEL version="0.7" \
    maintainer="Johannes Elias" \
    maintainer_email="joheli@gmx.net" \
    description="Image used at DGHM workshop for genome assembly and annotation in Braunschweig in May 2017" \
@@ -36,7 +36,6 @@ RUN apt-get -y update && apt-get install -y \
   perl \
   python3 \
   python-setuptools \
-  samtools \
   sudo \
   varscan \
   vim \
@@ -52,8 +51,11 @@ WORKDIR /home/workshop-user/download
 
 ## Help menu
 
-RUN wget https://github.com/dghm-genomics/docker-workshop-braunschweig/archive/v0.6.tar.gz; \
-   tar -xzf v0.6.tar.gz
+RUN wget https://github.com/dghm-genomics/docker-workshop-braunschweig/archive/v0.7.tar.gz; \
+   tar -xzf v0.7.tar.gz; \
+   mv docker-workshop-braunschweig-0.7 /opt; \
+   chmod 755 /opt/docker-workshop-braunschweig-0.7/helpmenu/helpmenu; \
+   ln -s /opt/docker-workshop-braunschweig-0.7/helpmenu/helpmenu /usr/bin/
 
 ## download and install further software
 
@@ -164,6 +166,16 @@ RUN wget https://sourceforge.net/projects/quast/files/quast-4.5.tar.gz/download;
 WORKDIR /opt/quast-4.5
 RUN ./setup.py install
 WORKDIR /home/workshop-user/download
+
+# samtools 0.1.19
+RUN wget https://sourceforge.net/projects/samtools/files/samtools/0.1.19/samtools-0.1.19.tar.bz2/download; \
+   mv download samtools.tar.bz2; \
+   tar xfj samtools.tar.bz2; \
+   mv samtools-0.1.19 /opt
+WORKDIR /opt/samtools-0.1.19
+RUN make; \
+   mv /usr/bin/samtools /usr/bin/samtools-1.3.1; \
+   ln -s /opt/samtools-0.1.19/samtools /usr/bin/
 
 ## set rights & change user
 RUN chown -R workshop-user:workshop-user /home/workshop-user/*
