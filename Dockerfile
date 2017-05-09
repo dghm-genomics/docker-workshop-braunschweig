@@ -176,6 +176,7 @@ RUN wget https://sourceforge.net/projects/samtools/files/samtools/0.1.19/samtool
 WORKDIR /opt/samtools-0.1.19
 RUN make; \
    mv /usr/bin/samtools /usr/bin/samtools-1.3.1; \
+   chmod 777 samtools; \
    ln -s /opt/samtools-0.1.19/samtools /usr/bin/
 
 ## set rights & change user
