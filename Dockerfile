@@ -171,6 +171,7 @@ WORKDIR /home/workshop-user/download
 RUN wget https://sourceforge.net/projects/samtools/files/samtools/0.1.19/samtools-0.1.19.tar.bz2/download; \
    mv download samtools.tar.bz2; \
    tar xfj samtools.tar.bz2; \
+   chmod 755 samtools-0.1.19; \
    mv samtools-0.1.19 /opt
 WORKDIR /opt/samtools-0.1.19
 RUN make; \
