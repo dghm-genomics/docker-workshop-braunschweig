@@ -72,11 +72,11 @@ RUN wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.8.2/sratoolkit.2.8.2-ubunt
    ln -s /opt/sratoolkit.2.8.2-ubuntu64/bin/* /usr/bin/
 
 # Binfo seminar toolbox
-RUN wget https://github.com/dghm-genomics/Binfo_seminar_toolbox/archive/1.3.tar.gz; \
-   tar -xzf 1.3.tar.gz; \
-   mv Binfo_seminar_toolbox-1.3 /opt; \
-   chmod 755 /opt/Binfo_seminar_toolbox-1.3/*.sh; \
-   ln -s /opt/Binfo_seminar_toolbox-1.3/* /usr/bin/
+RUN wget https://github.com/dghm-genomics/Binfo_seminar_toolbox/archive/1.4.tar.gz; \
+   tar -xzf 1.4.tar.gz; \
+   mv Binfo_seminar_toolbox-1.4 /opt; \
+   chmod 755 /opt/Binfo_seminar_toolbox-1.4/*.sh; \
+   ln -s /opt/Binfo_seminar_toolbox-1.4/* /usr/bin/
 
 # bbtools
 RUN wget https://sourceforge.net/projects/bbmap/files/latest/download; \
