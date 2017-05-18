@@ -127,25 +127,9 @@ Please note that Windows directories can only be accessed by prepending the disk
 
 ### Work with the software installed on the image
 
-A few suggestions to get you acquainted with the installed software:
-
-Once within the container, test SPAdes by typing
-
-    $ spades.py --test
-
-If successful, a long log will be output to your screen finishing with
-
-    ========= TEST PASSED CORRECTLY.
-
-    SPAdes log can be found here: /data/fastq/spades_test/spades.log
-
-    Thank you for using SPAdes!
-
-Show prokka's instructions by typing
-
-    $ prokka -h
+Harald Gruber-Vodicka has kindly provided an [example on how to assemble genomes of _Ricketsia japonica_](https://github.com/HRGV/DGHM2017_assembly/blob/master/DGHM2017_raw_reads_to_assembly_QC.sh) using this image. Please check it out!
     
-Please refer to [Information about referenced software and data](#information-about-referenced-software-and-data) to learn about the installed software available on the image. 
+Please also refer to [Information about referenced software and data](#information-about-referenced-software-and-data) to learn about the installed software available on the image. 
 
 ## Information about installed software
 
