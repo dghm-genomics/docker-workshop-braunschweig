@@ -127,7 +127,7 @@ Please note that Windows directories can only be accessed by prepending the disk
 
 ### Work with the software installed on the image
 
-Harald Gruber-Vodicka has kindly provided an [example on how to assemble genomes of _Ricketsia japonica_](https://github.com/HRGV/DGHM2017_assembly/blob/master/DGHM2017_raw_reads_to_assembly_QC.sh) using this image. Please check it out!
+Harald Gruber-Vodicka has kindly provided an [example on how to assemble genomes of _Rickettsia japonica_](https://github.com/HRGV/DGHM2017_assembly/blob/master/DGHM2017_raw_reads_to_assembly_QC.sh) using this image. Please check it out!
     
 Please also refer to [Information about referenced software and data](#information-about-referenced-software-and-data) to learn about the installed software available on the image. 
 
